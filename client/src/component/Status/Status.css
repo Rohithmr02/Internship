@@ -1,0 +1,61 @@
+.Status-conatiner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Status-content{
+     width: 80%;
+     height: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.Status-content-details{
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+}
+.StatusCard-container{
+    width: 95%;
+    height: 20%;
+    background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    border-radius: 10px;
+}
+.StatusApprove-container{
+    width: 95%;
+    height: 20%;
+    background:green;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    border-radius: 10px;
+}
+.StatusDeclined-container{
+    width: 95%;
+    height: 20%;
+    background:red;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    border-radius: 10px;
+}
+.Status-name,.Status-price{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Status-name,.Status-price p{
+    font-size: 11px;
+    text-align: center;
+}

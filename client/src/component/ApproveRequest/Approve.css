@@ -1,0 +1,111 @@
+.Approve-conatiner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Approve-content{
+     width: 80%;
+     height: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.Approve-content-details{
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+}
+.ApproveCard-container{
+    width: 95%;
+    height: 20%;
+    background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    border-radius: 10px;
+}
+.Approve-User,.Approve-price,.Approve-schemename{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Approve-User,.Approve-schemename,.Approve-price p{
+    font-size: 12px;
+    text-align: center;
+}
+.Approve-button{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Approve-button button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+   text-transform: uppercase;
+   border-radius: 5px;
+   font-size: 8px;
+}
+.Approve-button button:hover{
+    background-color: #5dbc5d;
+    cursor: pointer;
+}
+.Approvedetail-content {
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.Approvedetail-content table{
+    width: 90%;
+    height: 10%;
+    margin: 1%;
+    border-collapse: collapse;
+   
+}
+.Approvedetail-content table tr{
+    width: 100%;
+    height: 8vh;
+    border: 1px solid black;
+}
+.Approvedetail-content table th{
+    width: 20%;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 12px;
+}
+.Approvedetail-content table  td{
+    width: 40%;
+    text-align: center;
+    border: 1px solid black;
+}
+.Approvedetail-content table td p{
+    color: black;
+    font-size: 11px;
+}
+.Approvedetail-content table td button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 8px;
+}
+.Approvedetail-content table td button:hover{
+    background-color: #5dbc5d;
+    cursor: pointer;
+}

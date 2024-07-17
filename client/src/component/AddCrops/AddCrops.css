@@ -1,0 +1,87 @@
+.AddCrops-conatiner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.AddCrops-content{
+     width: 80%;
+     height: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.AddCrops-content-details{
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AddCrops-content-details form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.AddCrops-content-details form .form-div{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.AddCrops-content-details form input{
+    width: 80%;
+    height: 50%;
+    margin: 1%;
+    outline:none;
+    border: 1px solid skyblue;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.AddCrops-content-details form select{
+    width: 80%;
+    height: 50%;
+    margin: 1%;
+    outline: none;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+.AddCrops-content-details form input:focus{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.AddCrops-content-details form textarea{
+    width: 80%;
+    height: 50%;
+    margin: 1%;
+    resize: none;
+    outline:none;
+    border: 1px solid skyblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+.AddCrops-content-details form textarea:focus{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.AddCrops-content-details form button{
+    width: 80%;
+    height: 50%;
+    margin: 1%;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+   text-transform: uppercase;
+   border-radius: 5px;
+}
+.AddCrops-content-details form button:hover{
+    background-color: #5dbc5d;
+    cursor: pointer;
+}
