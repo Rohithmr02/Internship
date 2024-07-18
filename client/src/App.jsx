@@ -12,7 +12,6 @@ import AdminHome from './component/AdminHome/AdminHome';
 import AddCrops from './component/AddCrops/AddCrops';
 import AddScheme from './component/AddSchemes/AddScheme';
 import Approve from './component/ApproveRequest/Approve';
-import { useState } from 'react';
 
 function App() {
  
