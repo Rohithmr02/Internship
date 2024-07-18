@@ -7,7 +7,8 @@ import Axios from 'axios'
 function Status(){
     const[Data,setData]=useState([])
     const getlocaldata=JSON.parse(localStorage.getItem('email'))
-    const getdata=async()=>{
+    useEffect(()=>{
+         const getdata=async()=>{
         await Axios.post('http://localhost:4000/user/userdetails',{email:getlocaldata})
         .then((result)=>{
             console.log(result.data.schemes);
@@ -17,9 +18,10 @@ function Status(){
             console.log(err);
         })
     }
-    useEffect(()=>{
-         getdata();
-    },[getdata])
+    },[getlocaldata])
+
+    getdata();
+    
     return(
    
        
