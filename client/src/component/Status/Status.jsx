@@ -13,7 +13,6 @@ function Status(){
         .then((result)=>{
             console.log(result.data.schemes);
             setData(result.data.schemes)
-            console.log(Data.length);
         }).catch((err)=>{
             console.log(err);
         })
