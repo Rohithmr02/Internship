@@ -1,4 +1,3 @@
-import Navbar from '../Navbar/Navbar';
 import '../AddSchemes/AddScheme.css'
 import AdminNav from '../AdminNav/AdminNav';
 import { useState } from 'react';
