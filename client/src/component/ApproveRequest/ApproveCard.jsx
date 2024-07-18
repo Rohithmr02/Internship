@@ -12,7 +12,7 @@ function ApproveCard({item}){
     }
     const HandleApproveButton=async(id)=>{
          var newStatus="Approved"
-         await Axios.put(`http://localhost:4000/schemes/${item.email}/${id}`,{newStatus})
+         await Axios.put(`https://internship-c5up.onrender.com/schemes/${item.email}/${id}`,{newStatus})
          .then(()=>{
             alert("It's Approved")
          }).catch((err)=>{
@@ -21,7 +21,7 @@ function ApproveCard({item}){
     }
     const HandleDeclineButton=async(id)=>{
          var newStatus="Declined"
-         await Axios.put(`http://localhost:4000/schemes/${item.email}/${id}`,{newStatus})
+         await Axios.put(`https://internship-c5up.onrender.com/schemes/${item.email}/${id}`,{newStatus})
          .then(()=>{
             alert("It's Declined");
          }).catch((err)=>{
@@ -29,7 +29,7 @@ function ApproveCard({item}){
          })
     }
     const handleDeletebutton=async(id)=>{
-         await Axios.delete(`http://localhost:4000/user/delete/${id}`)
+         await Axios.delete(`https://internship-c5up.onrender.com/user/delete/${id}`)
          .then((result)=>{
             if(result.data === "deleted"){
                 alert("Want to Deleted User?");
