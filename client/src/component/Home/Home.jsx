@@ -47,8 +47,9 @@ function Home() {
         console.log(err);
       });
   };
+    getdata();
   }, [getlocaldata]);
-  getdata();
+  
   useEffect(() => {
     getcropcount();
     getschemecount();
