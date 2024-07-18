@@ -17,7 +17,7 @@ function AddCrops(){
 
     const handleformsubmit=async(e)=>{
         e.preventDefault();
-        await Axios.post('http://localhost:4000/crops/addCropdetails',{name,description,plantinginstructions,harvestinginstructions,price,category,season})
+        await Axios.post('https://internship-c5up.onrender.com/crops/addCropdetails',{name,description,plantinginstructions,harvestinginstructions,price,category,season})
         .then((result)=>{
             console.log(result.data);
             alert("success!");
