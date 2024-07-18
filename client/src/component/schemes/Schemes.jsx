@@ -8,7 +8,7 @@ import Axios from 'axios'
 function Schemes(){
     const [data,setdata]=useState([]);
     const getdata=async()=>{
-        await Axios.get('http://localhost:4000/schemes/schemedetails')
+        await Axios.get('https://internship-c5up.onrender.com/schemes/schemedetails')
         .then((result)=>{
             console.log(result.data);
             setdata(result.data)
