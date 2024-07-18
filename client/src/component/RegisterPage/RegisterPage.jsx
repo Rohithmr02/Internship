@@ -15,7 +15,7 @@ function RegisterPage(){
 
     const handelFormSubmit=async(e)=>{
         e.preventDefault();
-        await Axios.post('http://localhost:4000/user/register',{username,email,password,mobilenumber})
+        await Axios.post('https://internship-c5up.onrender.com/user/register',{username,email,password,mobilenumber})
         .then((result)=>{
             if(result.data === "Registeration successfull!"){
                 alert("Registeration successfull!");
