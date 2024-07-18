@@ -1,5 +1,4 @@
 import "../Home/Home.css";
-import { useParams } from "react-router-dom";
 import Axios from "axios";
 import { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
@@ -48,7 +47,7 @@ function Home() {
   };
   useEffect(() => {
     getdata();
-  }, [getlocaldata]);
+  }, []);
 
   useEffect(() => {
     getcropcount();
