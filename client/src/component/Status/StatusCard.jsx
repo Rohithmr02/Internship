@@ -10,7 +10,7 @@ function StatusCard({item}){
             return setClassName("StatusDeclined-container")
         }
 
-    },[])
+    },[item.status])
     return(
         <div className={className}> 
             <div className="Status-name">
