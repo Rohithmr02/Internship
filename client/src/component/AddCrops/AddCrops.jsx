@@ -1,4 +1,3 @@
-import Navbar from '../Navbar/Navbar';
 import '../AddCrops/AddCrops.css'
 import AdminNav from '../AdminNav/AdminNav';
 import { useState } from 'react';
