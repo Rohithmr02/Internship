@@ -10,18 +10,7 @@ function Home() {
   const [schemecount, setschemecount] = useState(0);
   var [schemeapplied, setschemeapplied] = useState(0);
   const getlocaldata = JSON.parse(localStorage.getItem("email"));
-  const getdata = async () => {
-    await Axios.post("http://localhost:4000/user/userdetails", {
-      email: getlocaldata,
-    })
-      .then((result) => {
-        setdata(result.data);
-        setschemeapplied(result.data.schemes.length);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+  
   const Data = [
     { name: "Total No Of Crops", value: cropcount },
     { name: "Total No Of Schemes", value: schemecount },
@@ -46,9 +35,20 @@ function Home() {
       });
   };
   useEffect(() => {
-    getdata();
-  }, [getdata]);
-
+    const getdata = async () => {
+    await Axios.post("http://localhost:4000/user/userdetails", {
+      email: getlocaldata,
+    })
+      .then((result) => {
+        setdata(result.data);
+        setschemeapplied(result.data.schemes.length);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  }, [getlocaldata]);
+  getdata();
   useEffect(() => {
     getcropcount();
     getschemecount();
