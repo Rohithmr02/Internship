@@ -19,7 +19,7 @@ function Status(){
     }
     useEffect(()=>{
          getdata();
-    },[getlocaldata])
+    },[])
     return(
    
        
