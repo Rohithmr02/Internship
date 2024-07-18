@@ -10,7 +10,7 @@ function Crops(){
     const[cropname,setcropname]=useState("")
     const[data,setdata]=useState([])
     const getdata=async()=>{
-       await Axios.get('http://localhost:4000/crops/cropdetails')
+       await Axios.get('https://internship-c5up.onrender.com/crops/cropdetails')
        .then((result)=>{
         setdata(result.data);
        }).catch((err)=>{
