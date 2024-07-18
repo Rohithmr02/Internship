@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 function Approve({setApprovedCount,setDeclinedCount}){
     const[data,setdata]=useState([]);
     const getdata=async()=>{
-        await Axios.get('http://localhost:4000/user/all/userdetails')
+        await Axios.get('https://internship-c5up.onrender.com/user/all/userdetails')
         .then((result)=>{
             console.log(result.data);
             setdata(result.data);
