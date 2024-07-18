@@ -10,7 +10,7 @@ function LoginPage(){
     const[password,setpassword]=useState("");
     const handleformsubmit=async(e)=>{
            e.preventDefault();
-           await Axios.post('http://localhost:4000/user/login',{email,password})
+           await Axios.post('https://internship-c5up.onrender.com/user/login',{email,password})
          .then((result)=>{
             if(result.data === "Loggedin successfully!"){
                 alert("Loggedin successfully!");
