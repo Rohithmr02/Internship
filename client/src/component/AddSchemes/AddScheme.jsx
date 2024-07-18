@@ -13,7 +13,7 @@ function AddScheme(){
 
     const Handleformsubmit=async(e)=>{
         e.preventDefault();
-        await Axios.post('http://localhost:4000/schemes/addschemes',{name,description,eligibility,Application})
+        await Axios.post('https://internship-c5up.onrender.com/schemes/addschemes',{name,description,eligibility,Application})
         .then(()=>{
             alert("success");
         }).catch((err)=>{
