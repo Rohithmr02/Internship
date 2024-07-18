@@ -15,7 +15,7 @@ function SchemeCard({item}){
     
     
     const HandleApplybutton=async()=>{
-        await Axios.post("http://localhost:4000/schemes/applyscheme",{email:getlocaldata,schemeid:item._id})
+        await Axios.post("https://internship-c5up.onrender.com/schemes/applyscheme",{email:getlocaldata,schemeid:item._id})
         .then((result)=>{
             if(result.data === "scheme already applied"){
                return alert("scheme already applied");
@@ -25,7 +25,7 @@ function SchemeCard({item}){
         }).catch((err)=>
             console.log(err)
         )
-        await Axios.put(`http://localhost:4000/schemes/${getlocaldata}/${item._id}`,{newStatus})
+        await Axios.put(`https://internship-c5up.onrender.com/schemes/${getlocaldata}/${item._id}`,{newStatus})
         .then(()=>{
             //
         }).catch((err)=>{
