@@ -24,7 +24,7 @@ function AdminHome() {
   ];
 
   const getusercount = async () => {
-    await Axios.get("http://localhost:4000/user/all/userdetails")
+    await Axios.get("https://internship-c5up.onrender.com/user/all/userdetails")
       .then((result) => {
         setusercount(result.data.length);
       })
@@ -33,7 +33,7 @@ function AdminHome() {
       });
   };
   const getschemecount = async () => {
-    await Axios.get("http://localhost:4000/schemes/schemedetails")
+    await Axios.get("https://internship-c5up.onrender.com/schemes/schemedetails")
       .then((result) => {
         setschemecount(result.data.length);
       })
@@ -42,7 +42,7 @@ function AdminHome() {
       });
   };
   const getcropcount = async () => {
-    await Axios.get("http://localhost:4000/crops/cropdetails")
+    await Axios.get("https://internship-c5up.onrender.com/crops/cropdetails")
       .then((result) => {
         setcropcount(result.data.length);
       })
