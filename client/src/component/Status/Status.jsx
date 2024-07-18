@@ -9,7 +9,7 @@ function Status(){
     const getlocaldata=JSON.parse(localStorage.getItem('email'))
     useEffect(()=>{
          const getdata=async()=>{
-        await Axios.post('http://localhost:4000/user/userdetails',{email:getlocaldata})
+        await Axios.post('https://internship-c5up.onrender.com/user/userdetails',{email:getlocaldata})
         .then((result)=>{
             console.log(result.data.schemes);
             setData(result.data.schemes)
