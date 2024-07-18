@@ -18,9 +18,10 @@ function Status(){
             console.log(err);
         })
     }
+     getdata();
     },[getlocaldata])
 
-    getdata();
+
     
     return(
    
