@@ -17,7 +17,7 @@ function Home() {
     { name: "Total No Of Schemes Applied", value: schemeapplied },
   ];
   const getschemecount = async () => {
-    await Axios.get("http://localhost:4000/schemes/schemedetails")
+    await Axios.get("https://internship-c5up.onrender.com/schemes/schemedetails")
       .then((result) => {
         setschemecount(result.data.length);
       })
@@ -26,7 +26,7 @@ function Home() {
       });
   };
   const getcropcount = async () => {
-    await Axios.get("http://localhost:4000/crops/cropdetails")
+    await Axios.get("https://internship-c5up.onrender.com/crops/cropdetails")
       .then((result) => {
         setcropcount(result.data.length);
       })
@@ -36,7 +36,7 @@ function Home() {
   };
   useEffect(() => {
     const getdata = async () => {
-    await Axios.post("http://localhost:4000/user/userdetails", {
+    await Axios.post("https://internship-c5up.onrender.com/user/userdetails", {
       email: getlocaldata,
     })
       .then((result) => {
