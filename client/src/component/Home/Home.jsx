@@ -47,7 +47,7 @@ function Home() {
   };
   useEffect(() => {
     getdata();
-  }, []);
+  }, [getdata]);
 
   useEffect(() => {
     getcropcount();
